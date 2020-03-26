@@ -1,23 +1,17 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import App  from './container/App';
-
-/* apollo client */
-import ApolloClient, { gql } from 'apollo-boost';
-import { ApolloProvider } from '@apollo/react-hooks';
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./container/App";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
 const client = new ApolloClient({
-    uri: 'https://api.graphql.jobs/'
-  });
+  uri: "https://api.graphql.jobs/"
+});
 
+const container = document.getElementById("app");
 
-const app = document.getElementById("app");
-
- 
 ReactDOM.render(
-        <ApolloProvider client={client}>
-            <App />
-        </ApolloProvider>,
-        app
-        );
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>, 
+  container
+);  

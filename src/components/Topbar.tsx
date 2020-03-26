@@ -1,16 +1,19 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 
 /* imagenes */
 const logo = require("../assets/logo.png");
 require("../styles/components/topbar.scss");
 
 
-interface IProps{
-    data: any
-}
-
 const Topbar = (props)=>{
-    
+    const {onChange} = props;
+    const [text, setText] = useState({
+        searchText: ""
+    })
+
+    const searchChange = (e) =>{
+        onChange(e.target.value);
+    }
     const {data} = props;
 
     return(
@@ -25,7 +28,10 @@ const Topbar = (props)=>{
                         </div>
                     </div>
                     <div className="__left__search">
-                        <input type="text" placeholder="Buscar empleos: Relacionados a GraphQL" />
+                        <input 
+                                onChange={(e)=>searchChange(e)}
+                                type="text" 
+                                placeholder="Buscar empleos: Relacionados a GraphQL" />
                         <img src="" alt=""/>
                     </div>
                 </div>
