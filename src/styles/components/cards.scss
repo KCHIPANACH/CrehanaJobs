@@ -4,6 +4,7 @@
     padding: 15px 10px;
     transition: all 500ms;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .cards_jobs:hover {
@@ -18,9 +19,16 @@
 .cards_jobs_perfil {
     width: 95px;
     height: 80px;
-    background: red;
     margin-right: 12px;
 }
+
+.cards_jobs_perfil > img {
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+    height: 100%;
+}
+
 
 .cards_jobs__datos {
     min-width: 210px;

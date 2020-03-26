@@ -1,22 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App  from './container/App';
 
-/* apollo client */
-import ApolloClient, { gql, InMemoryCache } from 'apollo-boost';
-import { ApolloProvider } from '@apollo/react-hooks';
-
-
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./container/App";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
 const client = new ApolloClient({
-    uri: 'https://api.graphql.jobs/',
-    cache: new InMemoryCache
-  });
+  uri: "https://api.graphql.jobs/"
+});
 
+const container = document.getElementById("app");
 
-const app = document.getElementById("app");
 ReactDOM.render(
-        <ApolloProvider client={client}>
-            <App />
-        </ApolloProvider>,
-        app
-);
+  <ApolloProvider client={client}>
+    <App />
+  </ApolloProvider>, 
+  container
+);  
+
