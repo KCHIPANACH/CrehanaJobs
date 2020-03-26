@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i,700,700i&display=swap');
+
+.f_ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+hr.separador {
+    margin: 0;
+    background: rgba(135,153,160,0.25);
+    height: 1px;
+}
+
+:root{
+    --base:#002e39;
+    --baseB:#0f3942;
+    --baseC:#1f434c;
+}

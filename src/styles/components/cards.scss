@@ -1,0 +1,59 @@
+.cards_jobs {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.cards_jobs:hover {
+    background: #0f3942;
+}
+
+.cards_jobs__left {
+    display: flex;
+    align-items: center;
+}
+
+.cards_jobs_perfil {
+    width: 95px;
+    height: 80px;
+    background: red;
+    margin-right: 12px;
+}
+
+.cards_jobs__datos {
+    min-width: 210px;
+}
+
+.__datos_empresa {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.cards_jobs__right {
+    display: flex;
+    align-items: center;
+}
+
+.card_jobs_tags {
+    display: flex;
+    margin-right: 60px;
+    max-width: 250px;
+    flex-wrap: wrap;
+}
+
+.card_tags {
+    background: var(--baseC);
+    margin: 5px;
+    padding: 2px 10px;
+}
+
+.__datos_title {
+    display: flex;
+}
+
+.tipo_hora {
+    margin: 0 0 0 13px;
+}

@@ -1,0 +1,42 @@
+.contenedor_main {
+    background: var(--base);
+    min-height: 900px;
+}
+
+.resultado_header {
+    padding-top: 45px;
+}
+
+.select_fitro {
+    height: 40px;
+    padding: 0 14px;
+    background: transparent;
+    color: white;
+    border: 1.5px solid var(--baseC);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.select_fitro option{
+    color: black;
+    outline: none;
+    border: transparent;
+}
+
+.filtros > div{
+    margin: 5px;
+}
+
+.resultado_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.filtros {
+    display: flex;
+}
+
+.contenedor_cards {
+    padding: 35px 0;
+}
