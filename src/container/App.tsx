@@ -4,6 +4,7 @@ import ListGeneral from '../hooks/ListGeneral';
 import Tobar from '../components/Topbar';
 import {CompanyList} from '../hooks/CompanyList';
 import {CountryList} from '../hooks/CountryList';
+
 /* css grilla simple.css */
 
 require('../styles/simple.scss');
@@ -66,6 +67,7 @@ class App extends Component {
                 </div>
             </div>
       </>
+
     );
   }
 }
